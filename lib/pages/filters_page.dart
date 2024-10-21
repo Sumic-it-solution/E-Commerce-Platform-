@@ -1,7 +1,8 @@
 // ignore_for_file: library_private_types_in_public_api
 
 import 'package:flutter/material.dart';
-import 'package:sumic_online/pages/filters_list.dart';
+
+import 'package:sumiconlineapp/pages/filters_list.dart';
 
 class FiltersPage extends StatefulWidget {
   const FiltersPage({super.key});

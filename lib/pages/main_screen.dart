@@ -1,12 +1,13 @@
 // ignore_for_file: avoid_types_as_parameter_names, library_private_types_in_public_api
 
 import 'package:flutter/material.dart';
-import 'package:sumic_online/components/bottom_nav_bar.dart';
-import 'package:sumic_online/pages/bagPage.dart';
-import 'package:sumic_online/pages/favoritesPage.dart';
-import 'package:sumic_online/pages/home.dart';
-import 'package:sumic_online/pages/profilePage.dart';
-import 'package:sumic_online/pages/shop_page.dart';
+
+import 'package:sumiconlineapp/components/bottom_nav_bar.dart';
+import 'package:sumiconlineapp/pages/bagPage.dart';
+import 'package:sumiconlineapp/pages/favoritesPage.dart';
+import 'package:sumiconlineapp/pages/home.dart';
+import 'package:sumiconlineapp/pages/profilePage.dart';
+import 'package:sumiconlineapp/pages/shop_page.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});

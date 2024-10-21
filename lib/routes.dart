@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:sumic_online/categories_list.dart'; // Categories list page
+// Categories list page
 
-import 'package:sumic_online/pages/catalog1.dart'; // Catalog 1
+
+import 'package:sumiconlineapp/categories_list.dart';
+import 'package:sumiconlineapp/pages/catalog1.dart'; // Catalog 1
 
 
 

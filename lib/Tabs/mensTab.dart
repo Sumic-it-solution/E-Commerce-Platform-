@@ -1,8 +1,9 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:sumic_online/CategoryCard.dart';
-import 'package:sumic_online/components/offer_card.dart';
+import 'package:sumiconlineapp/CategoryCard.dart';
+import 'package:sumiconlineapp/components/offer_card.dart';
+
 
 class MensTab extends StatelessWidget {
   const MensTab({super.key});

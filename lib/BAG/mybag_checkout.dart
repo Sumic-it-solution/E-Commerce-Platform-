@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:sumic_online/components/appbar.dart';
+
+import 'package:sumiconlineapp/components/appbar.dart';
 
 class CheckoutPage extends StatelessWidget {
+  const CheckoutPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(
         title: 'Check Out',
         centerTitle: true,
-        leading: IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back_ios)),
+        leading: IconButton(onPressed: () {}, icon: const Icon(Icons.arrow_back_ios)),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -16,32 +19,32 @@ class CheckoutPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Shipping Address
-            Text(
+            const Text(
               'Shipping Address',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 8),
-            Text('Tayebwa Ricky\nKampala, Uganda'),
+            const SizedBox(height: 8),
+            const Text('Tayebwa Ricky\nKampala, Uganda'),
             TextButton(
               onPressed: () {
                 // Add functionality to change address
               },
-              child: Text('Change'),
+              child: const Text('Change'),
             ),
-            Divider(),
+            const Divider(),
 
             // Payment
-            Text(
+            const Text(
               'Payment',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             Row(
               children: [
                 Image.asset('assets/images/airtel.png', width: 40),
-                SizedBox(width: 10),
+                const SizedBox(width: 10),
                 Image.asset('assets/images/mastercard.png', width: 40),
-                SizedBox(width: 10),
+                const SizedBox(width: 10),
                 Image.asset('assets/images/visa.png', width: 40),
               ],
             ),
@@ -49,36 +52,36 @@ class CheckoutPage extends StatelessWidget {
               onPressed: () {
                 // Add functionality to change payment method
               },
-              child: Text('Change'),
+              child: const Text('Change'),
             ),
-            Divider(),
+            const Divider(),
 
             // Delivery Method
-            Text(
+            const Text(
               'Delivery Method',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 8),
-            Text('FedEx\n2-3 Days'),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
+            const Text('FedEx\n2-3 Days'),
+            const SizedBox(height: 8),
             TextButton(
               onPressed: () {
                 // Add functionality to change delivery method
               },
-              child: Text('Change'),
+              child: const Text('Change'),
             ),
-            Divider(),
+            const Divider(),
 
             // Order Summary
-            Text(
+            const Text(
               'Order Summary',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 8),
-            Text('Order: 112\$'),
-            Text('Delivery: 15\$'),
-            Text('Summary: 127\$'),
-            SizedBox(height: 16),
+            const SizedBox(height: 8),
+            const Text('Order: 112\$'),
+            const Text('Delivery: 15\$'),
+            const Text('Summary: 127\$'),
+            const SizedBox(height: 16),
 
             // Submit Order Button
             Center(
@@ -86,9 +89,9 @@ class CheckoutPage extends StatelessWidget {
                 onPressed: () {
                   // Add functionality to submit order
                 },
-                child: Text('SUBMIT ORDER'),
+                child: const Text('SUBMIT ORDER'),
                 style: ElevatedButton.styleFrom(
-                  padding: EdgeInsets.symmetric(horizontal: 40, vertical: 15),
+                  padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 15),
                 ),
               ),
             ),

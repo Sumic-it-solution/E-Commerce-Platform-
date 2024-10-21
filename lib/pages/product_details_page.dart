@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sumic_online/components/appbar.dart';
-import 'package:sumic_online/components/elevated_button.dart';
+
+import 'package:sumiconlineapp/components/appbar.dart';
+import 'package:sumiconlineapp/components/elevated_button.dart';
 
 class ProductCard extends StatelessWidget {
   const ProductCard({super.key});

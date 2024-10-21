@@ -1,10 +1,11 @@
-// ignore_for_file: library_private_types_in_public_api, unused_field, unnecessary_nullable_for_final_variable_declarations
+// ignore_for_file: library_private_types_in_public_api, unused_field, unnecessary_nullable_for_final_variable_declarations, unnecessary_null_comparison
 
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:sumic_online/components/appbar.dart';
-import 'package:sumic_online/components/elevated_button.dart';
-import 'package:sumic_online/components/sumic_button.dart';
+import 'package:sumiconlineapp/components/appbar.dart';
+import 'package:sumiconlineapp/components/elevated_button.dart';
+import 'package:sumiconlineapp/components/sumic_button.dart';
+
 
 class Reviews extends StatelessWidget {
   const Reviews({super.key});
@@ -284,7 +285,7 @@ class _RatingsAndReviewsState extends State<RatingsAndReviews> {
 
   // Method to show the photo upload dialog and select images
   void _showPhotoUploadDialog() async {
-    final List<XFile>? selectedImages = await _picker.pickMultiImage();
+    final selectedImages = await _picker.pickMultiImage();
 
     if (selectedImages != null && selectedImages.isNotEmpty) {
       setState(() {

@@ -1,9 +1,10 @@
 // ignore_for_file: library_private_types_in_public_api
 
 import 'package:flutter/material.dart';
-import 'package:sumic_online/components/appbar.dart';
-import 'package:sumic_online/components/pdt_card.dart';
-import 'package:sumic_online/pages/filters_page.dart';
+
+import 'package:sumiconlineapp/components/appbar.dart';
+import 'package:sumiconlineapp/components/pdt_card.dart';
+import 'package:sumiconlineapp/pages/filters_page.dart';
 
 class CatalogOne extends StatefulWidget {
   const CatalogOne({super.key});
@@ -266,7 +267,6 @@ class _CatalogOneState extends State<CatalogOne> {
             ),
         ],
       ),
-
     );
   }
 

@@ -1,5 +1,7 @@
+// ignore_for_file: depend_on_referenced_packages
+
 import 'package:flutter/material.dart';
-import 'package:sumic_online/MODELS/cart_item.dart';
+import 'package:sumiconlineapp/MODELS/cart_item.dart';
 
 class Cart with ChangeNotifier {
   final Map<String, cart_Item> _items = {};

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sumic_online/pages/catalog1.dart';
+import 'package:sumiconlineapp/pages/catalog1.dart';
+
 
 class CategoriesTwo extends StatelessWidget {
   const CategoriesTwo({super.key});

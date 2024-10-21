@@ -1,9 +1,10 @@
 // ignore_for_file: library_private_types_in_public_api
 
 import 'package:flutter/material.dart';
-import 'package:sumic_online/components/elevated_button.dart';
-import 'package:sumic_online/components/pdt_card.dart';
-import 'package:sumic_online/pages/filters_page.dart';
+
+import 'package:sumiconlineapp/components/elevated_button.dart';
+import 'package:sumiconlineapp/components/pdt_card.dart';
+import 'package:sumiconlineapp/pages/filters_page.dart';
 
 class CatalogTwo extends StatefulWidget {
   const CatalogTwo({super.key});

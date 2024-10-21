@@ -2,14 +2,12 @@
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:sumic_online/BAG/mybag.dart';
-import 'package:sumic_online/HOME/main_page.dart';
-import 'package:sumic_online/pages/cart.dart';
-// ignore: duplicate_ignore
-// ignore: unused_import
-import 'package:sumic_online/pages/homescreen.dart';
+import 'package:sumiconlineapp/BAG/mybag.dart';
+import 'package:sumiconlineapp/pages/cart.dart';
+import 'package:sumiconlineapp/pages/homescreen.dart';
 
-import 'package:sumic_online/routes.dart';
+
+
 
 void main() {
   runApp(
@@ -33,7 +31,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Sumic_Online',
       initialRoute: '/',
-      home: MyBag(),
+      home: HomeScreen(),
     );
       
 

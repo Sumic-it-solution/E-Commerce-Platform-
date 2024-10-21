@@ -1,9 +1,10 @@
 // ignore_for_file: library_private_types_in_public_api
 
 import 'package:flutter/material.dart';
-import 'package:sumic_online/Tabs/KidsTab.dart';
-import 'package:sumic_online/Tabs/mensTab.dart';
-import 'package:sumic_online/Tabs/womenTab.dart';
+import 'package:sumiconlineapp/Tabs/KidsTab.dart';
+import 'package:sumiconlineapp/Tabs/mensTab.dart';
+import 'package:sumiconlineapp/Tabs/womenTab.dart';
+
 
 class ShopPage extends StatefulWidget {
   const ShopPage({super.key});
