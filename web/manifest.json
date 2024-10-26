@@ -1,6 +1,6 @@
 {
-    "name": "sumiconlineapp",
-    "short_name": "sumiconlineapp",
+    "name": "sumic_online",
+    "short_name": "sumic_online",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

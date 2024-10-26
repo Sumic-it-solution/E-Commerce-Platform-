@@ -1,19 +1,36 @@
+// ignore_for_file: prefer_const_constructors, unused_import
+
 import 'package:flutter/material.dart';
-import 'package:sumiconlineapp/view/flash_sceen.dart';
+
+import 'package:sumic_online/shop/shop_page.dart';
+import 'package:sumic_online/components/bottom_nav_bar.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      title: 'Sumic_Online',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: const Color(0xFF1EEF0F),
+        colorScheme: ColorScheme.fromSwatch().copyWith(
+          primary: const Color(0xFF1EEF0F),
+          secondary: const Color(0xFF013252),
+        ),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.white,
+        ),
+        buttonTheme: const ButtonThemeData(
+          buttonColor: Color(0xFF1EEF0F),
+        ),
       ),
-      home: SplashScreen(),
+      home: HomeScreen(),
     );
   }
 }
