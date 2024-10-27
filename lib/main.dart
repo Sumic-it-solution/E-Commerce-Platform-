@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:sumic_online/shop/shop_page.dart';
-import 'package:sumic_online/components/bottom_nav_bar.dart';
+import 'package:sumic_online/login/flash_sceen.dart'
 
 void main() {
   runApp(MyApp());
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
           buttonColor: Color(0xFF1EEF0F),
         ),
       ),
-      home: HomeScreen(),
+      home: SplashScreen(),
     );
   }
 }
