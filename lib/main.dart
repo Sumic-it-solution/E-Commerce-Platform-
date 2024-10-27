@@ -3,7 +3,9 @@
 import 'package:flutter/material.dart';
 
 import 'package:sumic_online/shop/shop_page.dart';
-import 'package:sumic_online/login/flash_sceen.dart'
+
+import 'login/flash_sceen.dart';
+// import 'package:sumic_online/login/flash_sceen.dart'
 
 void main() {
   runApp(MyApp());

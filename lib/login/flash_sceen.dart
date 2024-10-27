@@ -29,10 +29,10 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Center(
         child: Container(
           decoration: BoxDecoration(
-            border: Border.all(
-              color: Colors.black,
-              width: 1,
-            ),
+            // border: Border.all(
+            //   color: Colors.black,
+            //   width: 1,
+            // ),
             borderRadius: BorderRadius.circular(10),
           ),
           padding: const EdgeInsets.all(10),
