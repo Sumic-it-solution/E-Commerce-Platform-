@@ -13,7 +13,7 @@ class _ShopPageState extends State<ShopPage> {
   final List<Map<String, dynamic>> products = [
     {
       "name": "T-Shirt SPANISH",
-      "price": 9,
+      "price": 9.0,
       "image": 'assets/images/women_pullover.jpg',
       "rating": 4.5,
       "reviews": 3,
@@ -22,7 +22,7 @@ class _ShopPageState extends State<ShopPage> {
     },
     {
       "name": "Blouse",
-      "price": 14,
+      "price": 14.0,
       "image": 'assets/images/womens_blouse.jpg',
       "rating": 4.0,
       "reviews": 20,
@@ -31,7 +31,7 @@ class _ShopPageState extends State<ShopPage> {
     },
     {
       "name": "Winter Pullover",
-      "price": 25,
+      "price": 25.0,
       "image": 'assets/images/women_pullover.jpg',
       "rating": 4.8,
       "reviews": 8,
@@ -40,7 +40,7 @@ class _ShopPageState extends State<ShopPage> {
     },
     {
       "name": "Evening Dress",
-      "price": 45,
+      "price": 45.0,
       "image": 'assets/images/awesome_dress.jpg',
       "rating": 4.7,
       "reviews": 15,
@@ -49,7 +49,7 @@ class _ShopPageState extends State<ShopPage> {
     },
     {
       "name": "Casual Shirt",
-      "price": 30,
+      "price": 30.0,
       "image": 'assets/images/womens_shirt.jpg',
       "rating": 4.2,
       "reviews": 13,
@@ -58,7 +58,7 @@ class _ShopPageState extends State<ShopPage> {
     },
     {
       "name": "Trendy Top",
-      "price": 19,
+      "price": 19.0,
       "image": 'assets/images/womens_shirt.jpg',
       "rating": 4.4,
       "reviews": 12,
@@ -67,7 +67,7 @@ class _ShopPageState extends State<ShopPage> {
     },
     {
       "name": "Leather Jacket",
-      "price": 75,
+      "price": 75.0,
       "image": 'assets/images/womens_shirt.jpg',
       "rating": 4.9,
       "reviews": 18,
@@ -76,7 +76,7 @@ class _ShopPageState extends State<ShopPage> {
     },
     {
       "name": "Summer Dress",
-      "price": 40,
+      "price": 40.0,
       "image": 'assets/images/women_clothes.jpg',
       "rating": 4.5,
       "reviews": 10,
@@ -85,7 +85,7 @@ class _ShopPageState extends State<ShopPage> {
     },
     {
       "name": "High Heel Sandals",
-      "price": 60,
+      "price": 60.0,
       "image": 'assets/images/womens_blouse.jpg',
       "rating": 4.8,
       "reviews": 22,
@@ -94,7 +94,7 @@ class _ShopPageState extends State<ShopPage> {
     },
     {
       "name": "Evening Gown",
-      "price": 90,
+      "price": 90.0,
       "image": 'assets/images/awesome_dress.jpg',
       "rating": 4.6,
       "reviews": 17,
@@ -103,7 +103,7 @@ class _ShopPageState extends State<ShopPage> {
     },
     {
       "name": "Casual Shoes",
-      "price": 35,
+      "price": 35.0,
       "image": 'assets/images/mens_shoes.jpg',
       "rating": 4.4,
       "reviews": 19,
@@ -112,7 +112,7 @@ class _ShopPageState extends State<ShopPage> {
     },
     {
       "name": "Leather Boots",
-      "price": 80,
+      "price": 80.0,
       "image": 'assets/images/mens_shoes.jpg',
       "rating": 4.9,
       "reviews": 20,
@@ -121,7 +121,7 @@ class _ShopPageState extends State<ShopPage> {
     },
     {
       "name": "Sneakers",
-      "price": 55,
+      "price": 55.0,
       "image": 'assets/images/mens_shoes.jpg',
       "rating": 4.7,
       "reviews": 23,
@@ -130,7 +130,7 @@ class _ShopPageState extends State<ShopPage> {
     },
     {
       "name": "Denim Jeans",
-      "price": 45,
+      "price": 45.0,
       "image": 'assets/images/mens_shoes.jpg',
       "rating": 4.6,
       "reviews": 16,
@@ -139,7 +139,7 @@ class _ShopPageState extends State<ShopPage> {
     },
     {
       "name": "Formal Suit",
-      "price": 120,
+      "price": 120.0,
       "image": 'assets/images/mens_cloth.jpg',
       "rating": 4.8,
       "reviews": 14,
@@ -148,7 +148,7 @@ class _ShopPageState extends State<ShopPage> {
     },
     {
       "name": "Casual Shorts",
-      "price": 25,
+      "price": 25.0,
       "image": 'assets/images/men_new.jpg',
       "rating": 4.3,
       "reviews": 11,
@@ -157,7 +157,7 @@ class _ShopPageState extends State<ShopPage> {
     },
     {
       "name": "Chic Blouse",
-      "price": 35,
+      "price": 35.0,
       "image": 'assets/images/womens_blouse.jpg',
       "rating": 4.3,
       "reviews": 12,
@@ -166,7 +166,7 @@ class _ShopPageState extends State<ShopPage> {
     },
     {
       "name": "Jumpsuit",
-      "price": 60,
+      "price": 60.0,
       "image": 'assets/images/awesome_dress.jpg',
       "rating": 4.6,
       "reviews": 14,
@@ -175,7 +175,7 @@ class _ShopPageState extends State<ShopPage> {
     },
     {
       "name": "New Arrival Dress",
-      "price": 85,
+      "price": 85.0,
       "image": 'assets/images/women_clothes.jpg',
       "rating": 4.7,
       "reviews": 12,
@@ -184,7 +184,7 @@ class _ShopPageState extends State<ShopPage> {
     },
     {
       "name": "Casual Wear",
-      "price": 55,
+      "price": 55.0,
       "image": 'assets/images/women_clothes.jpg',
       "rating": 4.6,
       "reviews": 9,
