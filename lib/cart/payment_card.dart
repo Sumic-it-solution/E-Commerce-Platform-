@@ -60,7 +60,7 @@ class _PaymentMethodsState extends State<PaymentMethods> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Image.asset('assets/logos/chip.jpg',
+                        Image.network('https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/chip.jpg',
                             width: 32, height: 24),
                         const SizedBox(height: 20),
                         const Row(
@@ -130,7 +130,7 @@ class _PaymentMethodsState extends State<PaymentMethods> {
                                 ],
                               ),
                               
-                              Image.asset('assets/logos/mastercard.png',
+                              Image.network('https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/mastercard.png',
                                   width: 32, height: 25),
                             ],
                           ),
@@ -183,7 +183,7 @@ class _PaymentMethodsState extends State<PaymentMethods> {
                       children: [
                         Align(
                           alignment: Alignment.centerRight,
-                          child: Image.asset('assets/logos/visa.png',
+                          child: Image.network('https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/visa.png',
                               width: 50, height: 16),
                         ),
                         const SizedBox(height: 20),
@@ -212,7 +212,7 @@ class _PaymentMethodsState extends State<PaymentMethods> {
                                 fontWeight: FontWeight.w500),
                           ],
                         ),
-                        Image.asset('assets/logos/chip.jpg',
+                        Image.network('https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/chip.jpg',
                             width: 32, height: 24),
                         const Spacer(),
                         const Padding(

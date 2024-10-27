@@ -14,7 +14,7 @@ class _ShopPageState extends State<ShopPage> {
     {
       "name": "T-Shirt SPANISH",
       "price": 9.0,
-      "image": 'assets/images/women_pullover.jpg',
+      "image": 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/bag_3.jpg',
       "rating": 4.5,
       "reviews": 3,
       "brand": 'Mango',
@@ -23,7 +23,7 @@ class _ShopPageState extends State<ShopPage> {
     {
       "name": "Blouse",
       "price": 14.0,
-      "image": 'assets/images/womens_blouse.jpg',
+      "image": 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/men_hoodies.jpg',
       "rating": 4.0,
       "reviews": 20,
       "brand": 'Dorothy Perkins',
@@ -32,7 +32,7 @@ class _ShopPageState extends State<ShopPage> {
     {
       "name": "Winter Pullover",
       "price": 25.0,
-      "image": 'assets/images/women_pullover.jpg',
+      "image": 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/bag_3.jpg',
       "rating": 4.8,
       "reviews": 8,
       "brand": 'Zara',
@@ -41,7 +41,7 @@ class _ShopPageState extends State<ShopPage> {
     {
       "name": "Evening Dress",
       "price": 45.0,
-      "image": 'assets/images/awesome_dress.jpg',
+      "image": 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/mens_shoes.jpg',
       "rating": 4.7,
       "reviews": 15,
       "brand": 'Fashion Nova',
@@ -50,7 +50,7 @@ class _ShopPageState extends State<ShopPage> {
     {
       "name": "Casual Shirt",
       "price": 30.0,
-      "image": 'assets/images/womens_shirt.jpg',
+      "image": 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/bag_3.jpg',
       "rating": 4.2,
       "reviews": 13,
       "brand": 'H&M',
@@ -59,7 +59,7 @@ class _ShopPageState extends State<ShopPage> {
     {
       "name": "Trendy Top",
       "price": 19.0,
-      "image": 'assets/images/womens_shirt.jpg',
+      "image": 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/womens_t-shirt.jpg',
       "rating": 4.4,
       "reviews": 12,
       "brand": 'Forever 21',
@@ -68,7 +68,7 @@ class _ShopPageState extends State<ShopPage> {
     {
       "name": "Leather Jacket",
       "price": 75.0,
-      "image": 'assets/images/womens_shirt.jpg',
+      "image": 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/shoes.jpg',
       "rating": 4.9,
       "reviews": 18,
       "brand": 'Levis',
@@ -77,7 +77,7 @@ class _ShopPageState extends State<ShopPage> {
     {
       "name": "Summer Dress",
       "price": 40.0,
-      "image": 'assets/images/women_clothes.jpg',
+      "image": 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/accessories.jpg',
       "rating": 4.5,
       "reviews": 10,
       "brand": 'Zara',
@@ -86,7 +86,7 @@ class _ShopPageState extends State<ShopPage> {
     {
       "name": "High Heel Sandals",
       "price": 60.0,
-      "image": 'assets/images/womens_blouse.jpg',
+      "image": 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/accessories.jpg',
       "rating": 4.8,
       "reviews": 22,
       "brand": 'Gucci',
@@ -95,7 +95,7 @@ class _ShopPageState extends State<ShopPage> {
     {
       "name": "Evening Gown",
       "price": 90.0,
-      "image": 'assets/images/awesome_dress.jpg',
+      "image": 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/bag_3.jpg',
       "rating": 4.6,
       "reviews": 17,
       "brand": 'Versace',
@@ -104,7 +104,7 @@ class _ShopPageState extends State<ShopPage> {
     {
       "name": "Casual Shoes",
       "price": 35.0,
-      "image": 'assets/images/mens_shoes.jpg',
+      "image": 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/men_hoodies.jpg',
       "rating": 4.4,
       "reviews": 19,
       "brand": 'Adidas',
@@ -113,7 +113,7 @@ class _ShopPageState extends State<ShopPage> {
     {
       "name": "Leather Boots",
       "price": 80.0,
-      "image": 'assets/images/mens_shoes.jpg',
+      "image": 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/mens_shoes.jpg',
       "rating": 4.9,
       "reviews": 20,
       "brand": 'Timberland',
@@ -122,7 +122,7 @@ class _ShopPageState extends State<ShopPage> {
     {
       "name": "Sneakers",
       "price": 55.0,
-      "image": 'assets/images/mens_shoes.jpg',
+      "image": 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/accessories.jpg',
       "rating": 4.7,
       "reviews": 23,
       "brand": 'Nike',
@@ -131,7 +131,7 @@ class _ShopPageState extends State<ShopPage> {
     {
       "name": "Denim Jeans",
       "price": 45.0,
-      "image": 'assets/images/mens_shoes.jpg',
+      "image": 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/accessories.jpg',
       "rating": 4.6,
       "reviews": 16,
       "brand": 'Levis',
@@ -140,7 +140,7 @@ class _ShopPageState extends State<ShopPage> {
     {
       "name": "Formal Suit",
       "price": 120.0,
-      "image": 'assets/images/mens_cloth.jpg',
+      "image": 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/men_hoodies.jpg',
       "rating": 4.8,
       "reviews": 14,
       "brand": 'Hugo Boss',
@@ -149,7 +149,7 @@ class _ShopPageState extends State<ShopPage> {
     {
       "name": "Casual Shorts",
       "price": 25.0,
-      "image": 'assets/images/men_new.jpg',
+      "image": 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/shoes.jpg',
       "rating": 4.3,
       "reviews": 11,
       "brand": 'H&M',
@@ -158,7 +158,7 @@ class _ShopPageState extends State<ShopPage> {
     {
       "name": "Chic Blouse",
       "price": 35.0,
-      "image": 'assets/images/womens_blouse.jpg',
+      "image": 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/womens_t-shirt.jpg',
       "rating": 4.3,
       "reviews": 12,
       "brand": 'Chanel',
@@ -167,7 +167,7 @@ class _ShopPageState extends State<ShopPage> {
     {
       "name": "Jumpsuit",
       "price": 60.0,
-      "image": 'assets/images/awesome_dress.jpg',
+      "image": 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/mens_shoes.jpg',
       "rating": 4.6,
       "reviews": 14,
       "brand": 'Fashion Line',
@@ -176,7 +176,7 @@ class _ShopPageState extends State<ShopPage> {
     {
       "name": "New Arrival Dress",
       "price": 85.0,
-      "image": 'assets/images/women_clothes.jpg',
+      "image": 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/men_hoodies.jpg',
       "rating": 4.7,
       "reviews": 12,
       "brand": 'Dresses',
@@ -185,7 +185,7 @@ class _ShopPageState extends State<ShopPage> {
     {
       "name": "Casual Wear",
       "price": 55.0,
-      "image": 'assets/images/women_clothes.jpg',
+      "image": 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/bag_3.jpg',
       "rating": 4.6,
       "reviews": 9,
       "brand": 'Tops',
@@ -397,7 +397,7 @@ class ProductCard extends StatelessWidget {
                       );
                     },
                     child:
-                        Image.asset(imagePath, height: 150, fit: BoxFit.cover),
+                        Image.network(imagePath, height: 150, fit: BoxFit.cover),
                   ),
                   Positioned(
                     top: 8,
@@ -500,7 +500,7 @@ class ProductDetails extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Image.asset(imagePath),
+            Image.network(imagePath),
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Column(

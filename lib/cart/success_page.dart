@@ -19,7 +19,6 @@ class SuccessPage extends StatelessWidget {
       ),
       body: Center(
         child: SingleChildScrollView(
-          
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -38,28 +37,25 @@ class SuccessPage extends StatelessWidget {
                 fontWeight: FontWeight.w500,
               ),
               const SizedBox(height: 10.0),
-
-              
               SizedBox(
                 width: 200,
                 height: 36,
                 child: SumicButton(
                   text: 'Continue Shopping',
                   onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => const HomeScreen()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const HomeScreen()));
                   },
                 ),
               ),
-              const SizedBox(height: 10), 
-
-              
-              Image.asset(
-                'assets/images/sucex.png',
-                width: MediaQuery.of(context).size.width, 
-                height: MediaQuery.of(context).size.height *
-                    0.6, 
-                fit: BoxFit.cover, 
+              const SizedBox(height: 10),
+              Image.network(
+                'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/success.jpg',
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height * 0.6,
+                fit: BoxFit.cover,
               ),
             ],
           ),

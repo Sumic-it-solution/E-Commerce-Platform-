@@ -97,18 +97,18 @@ class CheckoutPage extends StatelessWidget {
               const SizedBox(height: 8),
               Row(
                 children: [
-                  Image.asset('assets/logos/airtel.png', width: 72, height: 39),
+                  Image.network('https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/airtel.png', width: 72, height: 39),
                   const SizedBox(width: 5),
-                  Image.asset('assets/logos/mtn.png', width: 69, height: 39),
+                  Image.network('https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/mtn.png', width: 69, height: 39),
                 ],
               ),
               const SizedBox(height: 10),
               Row(
                 children: [
-                  Image.asset('assets/logos/mastercard.png',
+                  Image.network('https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/mastercard.png',
                       width: 70, height: 54),
                   const SizedBox(width: 10),
-                  Image.asset('assets/logos/visa.png', width: 82, height: 61),
+                  Image.network('https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/visa.png', width: 82, height: 61),
                 ],
               ),
 
@@ -124,8 +124,8 @@ class CheckoutPage extends StatelessWidget {
                     color: Colors.white,
                     height: 72,
                     width: 100,
-                    child: Image.asset(
-                      'assets/logos/fedex.png',
+                    child: Image.network(
+                      'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/fedex.png',
                       width: 61,
                       height: 17,
                     ),
@@ -135,7 +135,7 @@ class CheckoutPage extends StatelessWidget {
                     color: Colors.white,
                     height: 72,
                     width: 100,
-                    child: Image.asset('assets/logos/usps.png',
+                    child: Image.network('https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/usps.png',
                         width: 82, height: 10.25),
                   ),
                   const SizedBox(width: 2),
@@ -143,7 +143,7 @@ class CheckoutPage extends StatelessWidget {
                     color: Colors.white,
                     height: 72,
                     width: 100,
-                    child: Image.asset('assets/logos/dhl.png',
+                    child: Image.network('https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/usps.png',
                         width: 71, height: 16),
                   ),
                 ],

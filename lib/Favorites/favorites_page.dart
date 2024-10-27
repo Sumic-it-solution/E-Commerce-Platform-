@@ -48,7 +48,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
           "L",
           "32\$",
           4.0,
-          imageUrl: "assets/images/womens_shirt.jpg",
+          imageUrl: "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/mens_cloth.jpg",
         ),
         _buildProductCard(
           "Mango",
@@ -58,7 +58,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
           "46\$",
           0.0,
           isNew: true,
-          imageUrl: "assets/images/women_pullover.jpg",
+          imageUrl: "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/accessories.jpg",
         ),
         _buildProductCard(
           "Oliver",
@@ -68,7 +68,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
           "52\$",
           3.0,
           isOutOfStock: true,
-          imageUrl: "assets/images/womens_shirt.jpg",
+          imageUrl: "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/bag_3.jpg",
         ),
         _buildProductCard(
           "&Berries",
@@ -78,7 +78,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
           "30\$",
           2.0,
           discount: "-30%",
-          imageUrl: "assets/images/men_new.jpg",
+          imageUrl: "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/kids_accessories.jpg",
         ),
         _buildProductCard(
           "&Berries",
@@ -88,7 +88,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
           "30\$",
           2.0,
           discount: "-30%",
-          imageUrl: "assets/images/men_new.jpg",
+          imageUrl: "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/men_hoodies.jpg",
         ),
         _buildProductCard(
           "&Berries",
@@ -98,7 +98,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
           "30\$",
           2.0,
           discount: "-30%",
-          imageUrl: "assets/images/men_new.jpg",
+          imageUrl: "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/accessories.jpg",
         ),
         _buildProductCard(
           "&Berries",
@@ -108,7 +108,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
           "30\$",
           2.0,
           discount: "-30%",
-          imageUrl: "assets/images/men_new.jpg",
+          imageUrl: "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/bag_3.jpg",
         ),
       ],
     );
@@ -126,17 +126,17 @@ class _FavoritesPageState extends State<FavoritesPage> {
           "L",
           "32\$",
           4.0,
-          imageUrl: "assets/images/womens_shirt.jpg",
+          imageUrl: "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/mens_shoes.jpg",
         ),
         _buildListProductCard(
           "Mango",
-          "Longsleeve Violeta",
+          "Phone",
           "Orange",
           "S",
           "46\$",
           0.0,
           isNew: true,
-          imageUrl: "assets/images/women_pullover.jpg",
+          imageUrl: "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/men_accessories.jpg",
         ),
         _buildListProductCard(
           "Oliver",
@@ -146,7 +146,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
           "52\$",
           3.0,
           isOutOfStock: true,
-          imageUrl: "assets/images/womens_shirt.jpg",
+          imageUrl: "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/mens_shoes.jpg",
         ),
         _buildListProductCard(
           "&Berries",
@@ -156,7 +156,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
           "30\$",
           2.0,
           discount: "-30%",
-          imageUrl: "assets/images/men_new.jpg",
+          imageUrl: "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/shoes.jpg",
         ),
       ],
     );
@@ -185,7 +185,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8),
               image: DecorationImage(
-                image: AssetImage(imageUrl),
+                image: NetworkImage(imageUrl),
                 fit: BoxFit.cover,
               ),
             ),
@@ -315,7 +315,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(8),
             image: DecorationImage(
-              image: AssetImage(imageUrl),
+              image: NetworkImage(imageUrl),
               fit: BoxFit.cover,
             ),
           ),

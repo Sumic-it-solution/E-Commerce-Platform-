@@ -36,7 +36,7 @@ class _SplashScreenState extends State<SplashScreen> {
             borderRadius: BorderRadius.circular(10),
           ),
           padding: const EdgeInsets.all(10),
-          child: Image.asset('assets/images/sumic_online.jpeg'),
+          child: Image.network('https://github.com/timothy-creater/sumiconline_images/blob/main/images/sumic_online.jpeg?raw=true'),
         ),
       ),
     );
@@ -61,9 +61,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   ];
 
   final List<String> _images = [
-    'assets/images/shopping_man.jpg',
-    'assets/images/womens_t-shirt.jpg',
-    'assets/images/mens_cloth.jpg'
+    'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/shopping_man.jpg',
+    'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/womens_t-shirt.jpg',
+    'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/men_accessories.jpg'
   ];
 
   @override
@@ -86,7 +86,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   children: [
                     Expanded(
                       flex: 4,
-                      child: Image.asset(
+                      child: Image.network
+                      (
                         _images[index],
                         fit: BoxFit.cover,
                       ),

@@ -39,7 +39,7 @@ class ProductCard extends StatelessWidget {
             child: Stack(
               alignment: Alignment.topRight,
               children: [
-                Image.asset(
+                Image.network(
                   imagePath,
                   height: 120,
                   width: double.infinity,

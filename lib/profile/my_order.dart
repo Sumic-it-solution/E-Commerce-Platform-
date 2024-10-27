@@ -182,7 +182,7 @@ class OrderDetailsPage extends StatelessWidget {
     
     List<Map<String, dynamic>> items = [
       {
-        'image': 'assets/images/accessories.jpg',
+        'image': 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/men_accessories.jpg',
         'name': 'Item 1',
         'brand': 'Mango',
         'color': 'Black',
@@ -191,7 +191,7 @@ class OrderDetailsPage extends StatelessWidget {
         'price': 40.0,
       },
       {
-        'image': 'assets/images/bag_4.jpg',
+        'image': 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/bag_3.jpg',
         'name': 'Item 2',
         'brand': 'Zara',
         'color': 'Red',
@@ -313,7 +313,7 @@ class OrderDetailsPage extends StatelessWidget {
             SizedBox(
               width: 60,
               height: 60,
-              child: Image.asset(item['image'], fit: BoxFit.cover),
+              child: Image.network(item['image'], fit: BoxFit.cover),
             ),
             const SizedBox(width: 12),
             

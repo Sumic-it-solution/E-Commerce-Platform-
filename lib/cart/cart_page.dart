@@ -23,11 +23,11 @@ class MyBag extends StatelessWidget {
             Expanded(
               child: ListView(
                 children: [
-                  _buildItemCard('assets/images/bag_1.jpg', 'Product 1',
+                  _buildItemCard('https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/accessories.jpg', 'Product 1',
                       'Color: Blue', 'Size: L', '51\$'),
-                  _buildItemCard('assets/images/bag_2.jpg', 'Product 2',
+                  _buildItemCard('https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/shoes.jpg', 'Product 2',
                       'Color: Gray', 'Size: M', '30\$'),
-                  _buildItemCard('assets/images/bag_3.jpg', 'Product 3',
+                  _buildItemCard('https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/mens_shoes.jpg', 'Product 3',
                       'Color: Black', 'Size: M', '43\$'),
                 ],
               ),
@@ -104,7 +104,7 @@ class MyBag extends StatelessWidget {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Image.asset(
+            Image.network(
               imagePath,
               width: 100,
               height: 100,
