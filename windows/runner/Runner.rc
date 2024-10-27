@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "sumiconlineapp" "\0"
+            VALUE "FileDescription", "sumic_online" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "sumiconlineapp" "\0"
+            VALUE "InternalName", "sumic_online" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "sumiconlineapp.exe" "\0"
-            VALUE "ProductName", "sumiconlineapp" "\0"
+            VALUE "OriginalFilename", "sumic_online.exe" "\0"
+            VALUE "ProductName", "sumic_online" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

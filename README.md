@@ -1,4 +1,4 @@
-# sumiconlineapp
+# sumic_online
 
 A new Flutter project.
 
