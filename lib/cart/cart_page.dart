@@ -15,6 +15,9 @@ class MyBag extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            const SizedBox(
+              height: 10,
+            ),
             const CustomText(
                 text: 'Cart',
                 fontSize: 35,
@@ -23,12 +26,24 @@ class MyBag extends StatelessWidget {
             Expanded(
               child: ListView(
                 children: [
-                  _buildItemCard('https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/accessories.jpg', 'Product 1',
-                      'Color: Blue', 'Size: L', '51\$'),
-                  _buildItemCard('https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/shoes.jpg', 'Product 2',
-                      'Color: Gray', 'Size: M', '30\$'),
-                  _buildItemCard('https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/mens_shoes.jpg', 'Product 3',
-                      'Color: Black', 'Size: M', '43\$'),
+                  _buildItemCard(
+                      'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/accessories.jpg',
+                      'Product 1',
+                      'Color: Blue',
+                      'Size: L',
+                      '51\$'),
+                  _buildItemCard(
+                      'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/shoes.jpg',
+                      'Product 2',
+                      'Color: Gray',
+                      'Size: M',
+                      '30\$'),
+                  _buildItemCard(
+                      'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/mens_shoes.jpg',
+                      'Product 3',
+                      'Color: Black',
+                      'Size: M',
+                      '43\$'),
                 ],
               ),
             ),
@@ -75,13 +90,14 @@ class MyBag extends StatelessWidget {
                 width: 343,
                 height: 48,
                 child: CustomElevatedButton(
-                    text: 'CHECK OUT',
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => const CheckoutPage()),
-                      );
-                    },
+                  text: 'CHECK OUT',
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const CheckoutPage()),
+                    );
+                  },
                 ),
               ),
             ),
@@ -89,8 +105,8 @@ class MyBag extends StatelessWidget {
         ),
       ),
     );
-
   }
+
   Widget _buildItemCard(
       String imagePath, String title, String color, String size, String price) {
     return Card(

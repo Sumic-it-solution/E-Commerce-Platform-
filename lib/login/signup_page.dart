@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sumic_online/components/elevated_button.dart';
 import 'package:sumic_online/login/login_page.dart';
 
 class SignUpPage extends StatefulWidget {
@@ -155,25 +156,11 @@ class _SignUpPageState extends State<SignUpPage> {
             const SizedBox(height: 30),
 
             Center(
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  foregroundColor: const Color(0xFF31EEF0),
-                  backgroundColor: const Color(0xFF013252),
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 120, vertical: 20),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.0),
-                  ),
-                ),
-                onPressed: () {},
-                child: const Text(
-                  'Sign Up',
-                  style: TextStyle(
-                    fontSize: 18,
-                    color: Colors.lightGreen,
-                  ),
-                ),
-              ),
+             child: CustomElevatedButton(
+              text: 'Sing up',
+              onTap: () {
+              },
+            )
             ),
           ],
         ),

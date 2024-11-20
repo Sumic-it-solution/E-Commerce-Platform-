@@ -5,11 +5,11 @@ class FavoritesPage extends StatefulWidget {
   const FavoritesPage({super.key});
 
   @override
-  _FavoritesPageState createState() => _FavoritesPageState();
+  FavoritesPageState createState() => FavoritesPageState();
 }
 
-class _FavoritesPageState extends State<FavoritesPage> {
-  bool _isGridView = false; 
+class FavoritesPageState extends State<FavoritesPage> {
+  bool _isGridView = false;
 
   @override
   Widget build(BuildContext context) {
@@ -17,11 +17,15 @@ class _FavoritesPageState extends State<FavoritesPage> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const CustomText(
-            text: 'Favourites',
-            fontSize: 30,
-            color: Color(0xFF013252),
-            fontWeight: FontWeight.bold,
+          const SizedBox(height: 40),
+          const Padding(
+            padding: EdgeInsets.only(left: 20),
+            child: CustomText(
+              text: 'Favourites',
+              fontSize: 30,
+              color: Color(0xFF013252),
+              fontWeight: FontWeight.bold,
+            ),
           ),
           _buildSortingAndFilters(),
           Expanded(
@@ -32,13 +36,12 @@ class _FavoritesPageState extends State<FavoritesPage> {
     );
   }
 
-  
   Widget _buildGridView() {
     return GridView.count(
-      crossAxisCount: 2, 
+      crossAxisCount: 2,
       crossAxisSpacing: 16,
       mainAxisSpacing: 16,
-      childAspectRatio: 0.65, 
+      childAspectRatio: 0.65,
       padding: const EdgeInsets.all(16),
       children: [
         _buildProductCard(
@@ -48,17 +51,19 @@ class _FavoritesPageState extends State<FavoritesPage> {
           "L",
           "32\$",
           4.0,
-          imageUrl: "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/mens_cloth.jpg",
+          imageUrl:
+              "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/mens_cloth.jpg",
         ),
         _buildProductCard(
           "Mango",
-          "Longsleeve Violeta",
+          "",
           "Orange",
           "S",
           "46\$",
           0.0,
           isNew: true,
-          imageUrl: "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/accessories.jpg",
+          imageUrl:
+              "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/accessories.jpg",
         ),
         _buildProductCard(
           "Oliver",
@@ -68,7 +73,8 @@ class _FavoritesPageState extends State<FavoritesPage> {
           "52\$",
           3.0,
           isOutOfStock: true,
-          imageUrl: "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/bag_3.jpg",
+          imageUrl:
+              "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/bag_3.jpg",
         ),
         _buildProductCard(
           "&Berries",
@@ -78,7 +84,8 @@ class _FavoritesPageState extends State<FavoritesPage> {
           "30\$",
           2.0,
           discount: "-30%",
-          imageUrl: "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/kids_accessories.jpg",
+          imageUrl:
+              "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/kids_accessories.jpg",
         ),
         _buildProductCard(
           "&Berries",
@@ -88,7 +95,8 @@ class _FavoritesPageState extends State<FavoritesPage> {
           "30\$",
           2.0,
           discount: "-30%",
-          imageUrl: "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/men_hoodies.jpg",
+          imageUrl:
+              "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/men_hoodies.jpg",
         ),
         _buildProductCard(
           "&Berries",
@@ -98,7 +106,8 @@ class _FavoritesPageState extends State<FavoritesPage> {
           "30\$",
           2.0,
           discount: "-30%",
-          imageUrl: "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/accessories.jpg",
+          imageUrl:
+              "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/accessories.jpg",
         ),
         _buildProductCard(
           "&Berries",
@@ -108,13 +117,13 @@ class _FavoritesPageState extends State<FavoritesPage> {
           "30\$",
           2.0,
           discount: "-30%",
-          imageUrl: "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/bag_3.jpg",
+          imageUrl:
+              "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/bag_3.jpg",
         ),
       ],
     );
   }
 
-  
   Widget _buildListView() {
     return ListView(
       padding: const EdgeInsets.all(16),
@@ -126,7 +135,8 @@ class _FavoritesPageState extends State<FavoritesPage> {
           "L",
           "32\$",
           4.0,
-          imageUrl: "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/mens_shoes.jpg",
+          imageUrl:
+              "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/mens_shoes.jpg",
         ),
         _buildListProductCard(
           "Mango",
@@ -136,7 +146,8 @@ class _FavoritesPageState extends State<FavoritesPage> {
           "46\$",
           0.0,
           isNew: true,
-          imageUrl: "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/men_accessories.jpg",
+          imageUrl:
+              "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/men_accessories.jpg",
         ),
         _buildListProductCard(
           "Oliver",
@@ -146,7 +157,8 @@ class _FavoritesPageState extends State<FavoritesPage> {
           "52\$",
           3.0,
           isOutOfStock: true,
-          imageUrl: "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/mens_shoes.jpg",
+          imageUrl:
+              "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/mens_shoes.jpg",
         ),
         _buildListProductCard(
           "&Berries",
@@ -156,7 +168,8 @@ class _FavoritesPageState extends State<FavoritesPage> {
           "30\$",
           2.0,
           discount: "-30%",
-          imageUrl: "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/shoes.jpg",
+          imageUrl:
+              "https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/shoes.jpg",
         ),
       ],
     );
@@ -178,7 +191,6 @@ class _FavoritesPageState extends State<FavoritesPage> {
       padding: const EdgeInsets.symmetric(vertical: 8.0),
       child: Row(
         children: [
-          
           Container(
             width: MediaQuery.of(context).size.width * 0.25,
             height: 100,
@@ -191,7 +203,6 @@ class _FavoritesPageState extends State<FavoritesPage> {
             ),
           ),
           const SizedBox(width: 16),
-          
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -246,14 +257,12 @@ class _FavoritesPageState extends State<FavoritesPage> {
                       ),
                     ),
                   ),
-                
                 const Align(
                   alignment: Alignment.bottomRight,
                   child: CircleAvatar(
                     radius: 16,
                     backgroundColor: Color(0xFF013252),
-                    child: Icon(Icons.favorite,
-                        color: Colors.white, size: 16),
+                    child: Icon(Icons.favorite, color: Colors.white, size: 16),
                   ),
                 ),
               ],
@@ -280,14 +289,6 @@ class _FavoritesPageState extends State<FavoritesPage> {
             icon: const Icon(Icons.sort, color: Colors.black),
             label: const Text("Price: lowest to high",
                 style: TextStyle(color: Colors.black)),
-          ),
-          IconButton(
-            icon: const Icon(Icons.grid_view, color: Colors.black),
-            onPressed: () {
-              setState(() {
-                _isGridView = !_isGridView; 
-              });
-            },
           ),
         ],
       ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sumic_online/components/elevated_button.dart';
 
 class ForgotPasswordPage extends StatefulWidget {
   const ForgotPasswordPage({super.key});
@@ -107,25 +108,11 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                   const SizedBox(height: 30),
                   
                   Center(
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        foregroundColor: const Color(0xFF31EEF0),
-                        backgroundColor: const Color(0xFF013252),
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 120, vertical: 20),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10.0),
-                        ),
-                      ),
-                      onPressed: _sendResetLink,
-                      child: const Text(
-                        'Send',
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.lightGreen,
-                        ),
-                      ),
-                    ),
+                    child: CustomElevatedButton(
+              text: 'send',
+              onTap: () {
+              },
+            )
                   ),
                 ],
               ),

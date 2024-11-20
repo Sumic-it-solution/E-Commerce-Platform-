@@ -11,7 +11,6 @@ class HomePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            
             Stack(
               children: [
                 Image.network(
@@ -34,8 +33,6 @@ class HomePage extends StatelessWidget {
                 ),
               ],
             ),
-
-            
             Padding(
               padding:
                   const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
@@ -68,30 +65,27 @@ class HomePage extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 children: const [
                   ProductCard(
-                    imageUrl: 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/womens_t-shirt.jpg',
+                    imageUrl:
+                        'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/womens_t-shirt.jpg',
                     label: 'Clothes',
                   ),
                   ProductCard(
-                    imageUrl: 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/men_accessories.jpg',
+                    imageUrl:
+                        'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/men_accessories.jpg',
                     label: 'Acccessories',
                   ),
                   ProductCard(
-                    imageUrl: 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/men_accessories.jpg',
+                    imageUrl:
+                        'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/men_accessories.jpg',
                     label: 'Women Shirt',
                   ),
                 ],
               ),
             ),
-
-            
             _buildSectionHeader(context, 'Sale', 'View all', () {}),
             _buildSaleProductList(),
-
-            
             _buildSectionHeader(context, 'New Products', 'View all', () {}),
             _buildNewProductList(),
-
-            
             _buildSectionHeader(context, 'Top Selling', 'View all', () {}),
             _buildTopSellingProductList(),
           ],
@@ -100,7 +94,6 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  
   Widget _buildSectionHeader(BuildContext context, String title,
       String actionText, VoidCallback onTap) {
     return Padding(
@@ -114,14 +107,16 @@ class HomePage extends StatelessWidget {
           ),
           TextButton(
             onPressed: onTap,
-            child: Text(actionText),
+            child: Text(
+              actionText,
+              style: const TextStyle(color: Colors.black),
+            ),
           ),
         ],
       ),
     );
   }
 
-  
   Widget _buildSaleProductList() {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16.0),
@@ -131,7 +126,8 @@ class HomePage extends StatelessWidget {
           scrollDirection: Axis.horizontal,
           children: const [
             SaleProductCard(
-              imageUrl: 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/men_hoodies.jpg',
+              imageUrl:
+                  'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/men_hoodies.jpg',
               discount: '-20%',
               name: 'Evening Dress',
               brand: 'Dorothy Perkins',
@@ -142,7 +138,8 @@ class HomePage extends StatelessWidget {
               ratingCount: 10,
             ),
             SaleProductCard(
-              imageUrl: 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/men_new.jpg',
+              imageUrl:
+                  'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/men_new.jpg',
               discount: '-10%',
               name: 'Winter Pullover',
               brand: 'Fashion Line',
@@ -153,7 +150,8 @@ class HomePage extends StatelessWidget {
               ratingCount: 8,
             ),
             SaleProductCard(
-              imageUrl: 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/shoes.jpg',
+              imageUrl:
+                  'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/shoes.jpg',
               discount: '-15%',
               name: 'Casual Shirt',
               brand: 'Topwear',
@@ -164,7 +162,8 @@ class HomePage extends StatelessWidget {
               ratingCount: 15,
             ),
             SaleProductCard(
-              imageUrl: 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/men_hoodies.jpg',
+              imageUrl:
+                  'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/men_hoodies.jpg',
               discount: '-15%',
               name: 'Casual Shirt',
               brand: 'Topwear',
@@ -175,7 +174,8 @@ class HomePage extends StatelessWidget {
               ratingCount: 15,
             ),
             SaleProductCard(
-              imageUrl: 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/women_clothes.jpg',
+              imageUrl:
+                  'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/women_clothes.jpg',
               discount: '-15%',
               name: 'Casual Shirt',
               brand: 'Topwear',
@@ -186,7 +186,8 @@ class HomePage extends StatelessWidget {
               ratingCount: 15,
             ),
             SaleProductCard(
-              imageUrl: 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/shopping_man.jpg',
+              imageUrl:
+                  'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/shopping_man.jpg',
               discount: '-15%',
               name: 'Casual Shirt',
               brand: 'Topwear',
@@ -197,7 +198,8 @@ class HomePage extends StatelessWidget {
               ratingCount: 15,
             ),
             SaleProductCard(
-              imageUrl: 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/mens_shoes.jpg',
+              imageUrl:
+                  'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/mens_shoes.jpg',
               discount: '-15%',
               name: 'Casual Shirt',
               brand: 'Topwear',
@@ -213,7 +215,6 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  
   Widget _buildNewProductList() {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16.0),
@@ -223,7 +224,8 @@ class HomePage extends StatelessWidget {
           scrollDirection: Axis.horizontal,
           children: const [
             NewProductCard(
-              imageUrl: 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/mens_shoes.jpg',
+              imageUrl:
+                  'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/mens_shoes.jpg',
               label: 'New Arrival Dress',
               category: 'Dresses',
               priceOld: 100,
@@ -232,7 +234,8 @@ class HomePage extends StatelessWidget {
               ratingCount: 12,
             ),
             NewProductCard(
-              imageUrl: 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/womens_t-shirt.jpg',
+              imageUrl:
+                  'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/womens_t-shirt.jpg',
               label: 'Casual Wear',
               category: 'Tops',
               priceOld: 65,
@@ -241,7 +244,8 @@ class HomePage extends StatelessWidget {
               ratingCount: 9,
             ),
             NewProductCard(
-              imageUrl: 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/accessories.jpg',
+              imageUrl:
+                  'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/accessories.jpg',
               label: 'Trendy Top',
               category: 'Tops',
               priceOld: 75,
@@ -250,7 +254,8 @@ class HomePage extends StatelessWidget {
               ratingCount: 14,
             ),
             NewProductCard(
-              imageUrl: 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/mens_shoes.jpg',
+              imageUrl:
+                  'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/mens_shoes.jpg',
               label: 'Shoes',
               category: 'Shoes',
               priceOld: 75,
@@ -259,7 +264,8 @@ class HomePage extends StatelessWidget {
               ratingCount: 14,
             ),
             NewProductCard(
-              imageUrl: 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/womens_t-shirt.jpg',
+              imageUrl:
+                  'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/womens_t-shirt.jpg',
               label: 'Trendy Top',
               category: 'Tops',
               priceOld: 75,
@@ -268,7 +274,8 @@ class HomePage extends StatelessWidget {
               ratingCount: 14,
             ),
             NewProductCard(
-              imageUrl: 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/womens_t-shirt.jpg',
+              imageUrl:
+                  'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/womens_t-shirt.jpg',
               label: 'Trendy Top',
               category: 'Tops',
               priceOld: 75,
@@ -282,7 +289,6 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  
   Widget _buildTopSellingProductList() {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16.0),
@@ -292,7 +298,8 @@ class HomePage extends StatelessWidget {
           scrollDirection: Axis.horizontal,
           children: const [
             TopSellingProductCard(
-              imageUrl: 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/shopping_man.jpg',
+              imageUrl:
+                  'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/shopping_man.jpg',
               label: 'Top Selling Shoes',
               category: 'Footwear',
               priceOld: 120,
@@ -301,7 +308,8 @@ class HomePage extends StatelessWidget {
               ratingCount: 15,
             ),
             TopSellingProductCard(
-              imageUrl: 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/women_clothes.jpg',
+              imageUrl:
+                  'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/women_clothes.jpg',
               label: 'Stylish Sneakers',
               category: 'Footwear',
               priceOld: 95,
@@ -310,7 +318,8 @@ class HomePage extends StatelessWidget {
               ratingCount: 12,
             ),
             TopSellingProductCard(
-              imageUrl: 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/shoes.jpg',
+              imageUrl:
+                  'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/shoes.jpg',
               label: 'Leather Boots',
               category: 'Footwear',
               priceOld: 150,
@@ -319,7 +328,8 @@ class HomePage extends StatelessWidget {
               ratingCount: 18,
             ),
             TopSellingProductCard(
-              imageUrl: 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/men_new.jpg',
+              imageUrl:
+                  'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/men_new.jpg',
               label: 'Leather Boots',
               category: 'Footwear',
               priceOld: 150,
@@ -328,7 +338,8 @@ class HomePage extends StatelessWidget {
               ratingCount: 18,
             ),
             TopSellingProductCard(
-              imageUrl: 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/men_new.jpg',
+              imageUrl:
+                  'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/men_new.jpg',
               label: 'Leather Boots',
               category: 'Footwear',
               priceOld: 150,
@@ -337,7 +348,8 @@ class HomePage extends StatelessWidget {
               ratingCount: 18,
             ),
             TopSellingProductCard(
-              imageUrl: 'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/men_hoodies.jpg',
+              imageUrl:
+                  'https://media.githubusercontent.com/media/timothy-creater/sumiconline_images/main/images/men_hoodies.jpg',
               label: 'Leather Boots',
               category: 'Footwear',
               priceOld: 150,
@@ -436,9 +448,7 @@ class SaleProductCard extends StatelessWidget {
                     bottom: 8,
                     right: 8,
                     child: InkWell(
-                      onTap: () {
-                        
-                      },
+                      onTap: () {},
                       child: Container(
                         padding: const EdgeInsets.all(6),
                         decoration: const BoxDecoration(
@@ -544,9 +554,7 @@ class NewProductCard extends StatelessWidget {
                     bottom: 8,
                     right: 8,
                     child: InkWell(
-                      onTap: () {
-                        
-                      },
+                      onTap: () {},
                       child: Container(
                         padding: const EdgeInsets.all(6),
                         decoration: const BoxDecoration(
@@ -638,9 +646,7 @@ class TopSellingProductCard extends StatelessWidget {
                     bottom: 8,
                     right: 8,
                     child: InkWell(
-                      onTap: () {
-                        
-                      },
+                      onTap: () {},
                       child: Container(
                         padding: const EdgeInsets.all(6),
                         decoration: const BoxDecoration(

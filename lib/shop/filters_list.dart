@@ -1,5 +1,11 @@
 
 
+
+
+
+
+// ignore_for_file: library_private_types_in_public_api
+
 import 'package:flutter/material.dart';
 import 'package:sumic_online/components/sumic_button.dart';
 
@@ -7,10 +13,10 @@ class BrandsPage extends StatefulWidget {
   const BrandsPage({super.key});
 
   @override
-  _BrandsPageState createState() => _BrandsPageState();
+  BrandsPageState createState() => BrandsPageState();
 }
 
-class _BrandsPageState extends State<BrandsPage> {
+class BrandsPageState extends State<BrandsPage> {
   List<String> brands = [
     "Adidas",
     "Adidas Originals",

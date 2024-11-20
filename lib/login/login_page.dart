@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sumic_online/components/bottom_nav_bar.dart';
+import 'package:sumic_online/components/elevated_button.dart';
 import 'package:sumic_online/login/forgot_pasword.dart';
 
 class LoginPage extends StatelessWidget {
@@ -15,13 +16,12 @@ class LoginPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            
             Row(
               children: [
                 IconButton(
                   icon: const Icon(Icons.arrow_back, color: Colors.black),
                   onPressed: () {
-                    Navigator.pop(context); 
+                    Navigator.pop(context);
                   },
                 ),
               ],
@@ -36,7 +36,6 @@ class LoginPage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 30),
-            
             Container(
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -60,7 +59,6 @@ class LoginPage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
-            
             Container(
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -84,13 +82,12 @@ class LoginPage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 10),
-            
             GestureDetector(
               onTap: () {
-                
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const ForgotPasswordPage()),
+                  MaterialPageRoute(
+                      builder: (context) => const ForgotPasswordPage()),
                 );
               },
               child: const Row(
@@ -99,43 +96,26 @@ class LoginPage extends StatelessWidget {
                   Text(
                     'Forgot your Password??',
                     style: TextStyle(
-                      color: Color(0xFF013252), 
+                      color: Color(0xFF013252),
                       fontSize: 16,
                     ),
                   ),
                   SizedBox(width: 5),
-                  Icon(Icons.login, color: Colors.blue), 
+                  Icon(Icons.login, color: Colors.blue),
                 ],
               ),
             ),
             const SizedBox(height: 30),
-            
             Center(
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  foregroundColor: const Color(0xFF31EEF0),
-                  backgroundColor: const Color(0xFF013252),
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 120, vertical: 20),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10.0),
-                  ),
-                ),
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const HomeScreen()),
-                  );
-                },
-                child: const Text(
-                  'LogIn',
-                  style: TextStyle(
-                    fontSize: 18,
-                    color: Colors.lightGreen,
-                  ),
-                ),
-              ),
-            ),
+                child: CustomElevatedButton(
+              text: 'Login',
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const HomeScreen()),
+                );
+              },
+            )),
           ],
         ),
       ),

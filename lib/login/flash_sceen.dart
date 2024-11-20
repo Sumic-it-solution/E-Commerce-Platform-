@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'package:flutter/material.dart';
 import 'package:sumic_online/login/signup_page.dart';
 
@@ -5,10 +7,10 @@ class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
   @override
-  _SplashScreenState createState() => _SplashScreenState();
+  SplashScreenState createState() => SplashScreenState();
 }
 
-class _SplashScreenState extends State<SplashScreen> {
+class SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
@@ -47,10 +49,10 @@ class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
 
   @override
-  _OnboardingScreenState createState() => _OnboardingScreenState();
+  OnboardingScreenState createState() => OnboardingScreenState();
 }
 
-class _OnboardingScreenState extends State<OnboardingScreen> {
+class OnboardingScreenState extends State<OnboardingScreen> {
   final PageController _pageController = PageController();
   int _currentPage = 0;
 
@@ -124,7 +126,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                               padding: const EdgeInsets.only(bottom: 16.0),
                               child: ElevatedButton(
                                 style: ElevatedButton.styleFrom(
-                                  backgroundColor: Colors.blue,
+                                  backgroundColor: const Color(0xFF013252),
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(20),
                                   ),
@@ -182,7 +184,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           height: 10,
           width: currentIndex == index ? 20 : 10,
           decoration: BoxDecoration(
-            color: currentIndex == index ? Colors.blue : Colors.grey,
+            color: currentIndex == index ? const Color(0xFF013252) : Colors.grey,
             borderRadius: BorderRadius.circular(5),
           ),
         );

@@ -1,7 +1,11 @@
 // ignore_for_file: prefer_const_constructors, unused_import
 
-import 'package:flutter/material.dart';
 
+
+import 'package:flutter/material.dart';
+import 'package:sumic_online/Favorites/dup_fav.dart';
+import 'package:sumic_online/Favorites/favorites_page.dart';
+import 'package:sumic_online/cart/cart_page.dart';
 import 'package:sumic_online/shop/shop_page.dart';
 
 import 'login/flash_sceen.dart';
